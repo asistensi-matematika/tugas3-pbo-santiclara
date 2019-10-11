@@ -1,0 +1,28 @@
+package TugasAsistensi;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author santiclara
+ */
+public class LinearEquationMain {
+    public static void main(String [] args) {
+    Scanner PL = new Scanner(System.in);
+        System.out.println("Input");
+        double a = PL.nextDouble();
+        double b = PL.nextDouble();
+        double c = PL.nextDouble();
+        double d = PL.nextDouble();
+        int e = PL.nextInt();
+        int f = PL.nextInt();
+        
+        LinearEquation PL2 = new LinearEquation(a, b, c, d, e, f);
+        PL2.Persamaan();
+        PL2.PersamaanLinear1(a,b,e);
+        PL2.PersamaanLinear2(c,d,f);
+        PL2.Hasilnya();
+        PL2.CekSolusi();
+        }
+    
+}
